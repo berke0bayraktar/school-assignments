@@ -1,0 +1,16 @@
+After distinctElements:
+Total distinct element=7
+After calculateDistance:
+Total distance=130
+After addOrRemove 5:
+3 1 5 1 9 7 12 4 26 37 43 30 15 
+After addOrRemove -2:
+5 1 9 7 12 4 26 37 43 30 15 
+After reverse 2:
+1 5 9 7 12 4 26 37 43 30 15 
+After sort:
+1 4 5 7 9 12 15 26 30 37 43 
+After distinctElements:
+Total distinct element=11
+After calculateDistance:
+Total distance=922

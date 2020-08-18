@@ -1,0 +1,16 @@
+Q distinctElements
+S distinctElements
+Q calculateDistance
+S calculateDistance
+Q addOrRemove 5
+Q addOrRemove -2
+S addOrRemove 1
+S addOrRemove -4
+Q reverse 2
+S reverse 1
+Q sortElements 
+S sortElements
+Q distinctElements
+S distinctElements
+Q calculateDistance
+S calcualteDistance
