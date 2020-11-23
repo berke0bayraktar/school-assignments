@@ -1,6 +1,6 @@
 #include <iostream>
 #include <list>
-//Singly Linked List HEAD
+#include <stack>
 
 using namespace std;
 
@@ -85,9 +85,30 @@ public:
         }
         head = curr;
     }
-
     void ReverseRec() {
         ReverseRecAux(head);
+    }
+    void ReverseStack() {
+        if(head == nullptr) return;
+        
+        stack<Node*> stk;
+        Node* temp = head;
+
+        while (temp != nullptr) {
+            stk.push(temp);
+            temp = temp->next;
+        }
+
+        head = stk.top();
+        stk.pop();
+
+        temp = head;
+        while(!stk.empty()) {
+            temp->next = stk.top();
+            temp = stk.top();
+            stk.pop();
+        }
+        temp->next = nullptr;
     }
 
     void PrintReverse() {
@@ -145,5 +166,11 @@ list<pair<int,int>> AddPolynomials(list<pair<int,int>>& p1, list<pair<int,int>>&
 
 int main() {
     LinkedList list1;
-    LinkedList list2;
+    list1.PushFront(40);
+    list1.PushFront(30);
+    list1.PushFront(20);
+    list1.PushFront(10);
+
+    list1.ReverseStack();
+    list1.Print();
 }
