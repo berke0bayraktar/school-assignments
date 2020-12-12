@@ -1,2 +1,2 @@
 # BBM102
-This course aims to teach basic fundemantal programming knowledge in python
+This course aims to teach basic fundamental programming knowledge in python
